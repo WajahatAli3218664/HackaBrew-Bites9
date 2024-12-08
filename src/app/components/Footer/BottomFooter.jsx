@@ -11,19 +11,20 @@ const BottomFooter = () => {
     <footer className="container-fluid bg-footer"> 
       <div className="container">
         <div className="row">
-          <div className="col-lg-6 d-flex align-items-center">
-            <p className="p-2 my-2">
+          {/* Copyright Section */}
+          <div className="col-lg-6 col-md-12 d-flex justify-content-center align-items-center">
+            <p className="text-white p-2 my-0">
               Copyright © 2022 by Ayeman. All Rights Reserved.
             </p>
           </div>
-          <div className="col-lg-6">
-            <div className="d-flex justify-content-center">
-              <SocialIcon src={FacebookIcon} alt="Facebook" />
-              <SocialIcon src={TwitterIcon} alt="Twitter" />
-              <SocialIcon src={InstagramIcon} alt="Instagram" />
-              <SocialIcon src={YoutubeIcon} alt="Youtube" />
-              <SocialIcon src={PinterestIcon} alt="Pinterest" />
-            </div>
+          
+          {/* Social Icons Section */}
+          <div className="col-lg-6 col-md-12 d-flex justify-content-center">
+            <SocialIcon src={FacebookIcon} alt="Facebook" />
+            <SocialIcon src={TwitterIcon} alt="Twitter" />
+            <SocialIcon src={InstagramIcon} alt="Instagram" />
+            <SocialIcon src={YoutubeIcon} alt="Youtube" />
+            <SocialIcon src={PinterestIcon} alt="Pinterest" />
           </div>
         </div>
       </div>
