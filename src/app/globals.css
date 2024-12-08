@@ -33,10 +33,15 @@ body {
 
 /* Footer Background Full Width */
 .bg-footer {
-    background-color: #FF9F0D !important; /* Set the footer background color */
-    width: 100vw; /* Ensure it spans the full viewport width */
-    margin: 0; /* Remove any default margin */
-    padding: 0; /* Remove any padding to avoid extra spaces */
+    background-color: #FF9F0D !important; /* Footer ka background color */
+    width: 100vw; /* Poora viewport width cover kare */
+    margin: 0; /* Default margin remove */
+    padding: 10px 0; /* Footer ke andar padding */
+    display: flex; /* Flex layout for alignment */
+    justify-content: center; /* Center align horizontally */
+    align-items: center; /* Center align vertically */
+    flex-direction: column; /* Stack content vertically */
+    text-align: center; /* Text center align */
 }
 
 /* Border Color */
