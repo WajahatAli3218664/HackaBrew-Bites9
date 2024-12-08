@@ -1,34 +1,51 @@
-/* Reset body margins and padding */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Ensures consistent box model */
+    color: black;
+    background-color: black !important; /* Force background color to black */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+    box-sizing: border-box; /* Ensure consistent box sizing */
 }
 
-/* Footer Styling */
-.bg-footer {
-    background-color: #FF9F0D !important; /* Footer background color */
-    width: 100vw; /* Full viewport width */
-    margin: 0 !important; /* Remove any margins */
-    padding: 0 !important; /* Remove any padding */
-    overflow: hidden; /* Prevent overflow issues */
+/* Font family applied to elements with the 'Great-Vibes' class */
+.Great-Vibes {
+    font-family: 'Great Vibes', cursive;
 }
 
-/* Utility Classes */
+/* Text color */
 .primary-color {
     color: #FF9F0D !important;
 }
 
+/* Background Color */
 .btn-color {
     background-color: #FF9F0D !important;
 }
 
+.bg-color {
+    background-color: black;
+}
+
+.bg-gray-color {
+    background-color: #FF9F0D !important; /* Set footer color */
+}
+
+/* Footer Background Full Width */
+.bg-footer {
+    background-color: #FF9F0D !important; /* Set the footer background color */
+    width: 100vw; /* Ensure it spans the full viewport width */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any padding to avoid extra spaces */
+}
+
+/* Border Color */
 .search-bar {
     border-color: #FF9F0D !important;
     color: white;
 }
 
-/* Hover Effects */
+/* Pseudo Classes */
 .nav-link:hover {
     color: #FF9F0D !important;
 }
@@ -41,17 +58,12 @@ body {
     color: #FF9F0D;
 }
 
-/* General Styling */
+/* Text Decoration */
 .icon-link {
     text-decoration: none;
 }
 
-.icon {
-    color: white;
-    transition: color 0.3s;
-}
-
-/* Background Images */
+/* Background Image and other elements with specific styling */
 .bg-bottom-leaf {
     rotate: -128.85deg;
     display: flex;
@@ -60,7 +72,28 @@ body {
     padding-bottom: 50%;
 }
 
-/* Backgrounds for Different Sections */
+.greater-sign::after {
+    content: ">";
+    margin: 0 5px;
+    color: #ffffff;
+}
+
+.icon {
+    color: white;
+    transition: color 0.3s;
+}
+
+.bg-img {
+    margin-top: 25%;
+    margin-left: 85% !important;
+}
+
+.leaf {
+    width: 80%;
+    height: auto;
+}
+
+/* Background Images */
 .home-bg {
     background-image: url('/Hero-Image.svg');
     width: 100%;
@@ -78,15 +111,71 @@ body {
     background-position: right bottom;
 }
 
-/* Footer Text Styling */
-.footer-text {
-    color: white;
-    font-size: 14px;
+.hero {
+    background-image: url('/Hero-signup.svg');
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-/* Adjust for Responsiveness */
-@media (max-width: 768px) {
-    .bg-footer {
-        padding: 10px; /* Add padding for smaller screens */
-    }
+.experience {
+    background-image: url('/FishDish.svg');
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+.darkBg {
+    background-image: url('/DarkBg.svg');
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .9;
+}
+
+.yellowBg {
+    background-image: url('/YellowBox.svg');
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.whiteBg {
+    background-image: url('/WhiteCard.svg');
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.processBg {
+    background-image: url('/process.svg');
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.whiteTestimonial {
+    background-image: url('/Testimonial-White.svg');
+    width: 100%;
+    height: auto;
+    background-size: auto;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    opacity: 0.6;
+}
+
+.bg-flower {
+    background-image: url('/bg-flower.svg');
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    opacity: 2;
+}                     
